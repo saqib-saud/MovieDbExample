@@ -28,6 +28,9 @@
 		C19278761A8E42BD009573A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19278751A8E42BD009573A0 /* Images.xcassets */; };
 		C19278791A8E42BD009573A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19278771A8E42BD009573A0 /* LaunchScreen.xib */; };
 		C19278851A8E42BE009573A0 /* MovieDbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278841A8E42BE009573A0 /* MovieDbTests.m */; };
+		C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CCD1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m */; };
+		C1A49CD01AA4604300ED09C0 /* MovieDbTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CCF1AA4604300ED09C0 /* MovieDbTableViewCellTests.m */; };
+		C1A49CD21AA4617100ED09C0 /* CDMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CD11AA4617100ED09C0 /* CDMovieTests.m */; };
 		C1DD229E1A8F6D4E00DF651B /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD229D1A8F6D4E00DF651B /* CoreDataTests.m */; };
 		C1DD22A01A8F732A00DF651B /* MovieDbClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD229F1A8F732A00DF651B /* MovieDbClientTests.m */; };
 		C1DD22B51A8F883F00DF651B /* _CDMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD22A31A8F883F00DF651B /* _CDMovie.m */; };
@@ -79,6 +82,9 @@
 		C192787E1A8E42BE009573A0 /* MovieDbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19278831A8E42BE009573A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C19278841A8E42BE009573A0 /* MovieDbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDbTests.m; sourceTree = "<group>"; };
+		C1A49CCD1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularMoviesViewControllerTests.m; sourceTree = "<group>"; };
+		C1A49CCF1AA4604300ED09C0 /* MovieDbTableViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDbTableViewCellTests.m; sourceTree = "<group>"; };
+		C1A49CD11AA4617100ED09C0 /* CDMovieTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMovieTests.m; sourceTree = "<group>"; };
 		C1DD229D1A8F6D4E00DF651B /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
 		C1DD229F1A8F732A00DF651B /* MovieDbClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDbClientTests.m; sourceTree = "<group>"; };
 		C1DD22A21A8F883F00DF651B /* _CDMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CDMovie.h; sourceTree = "<group>"; };
@@ -187,6 +193,9 @@
 				C19278841A8E42BE009573A0 /* MovieDbTests.m */,
 				C19278821A8E42BE009573A0 /* Supporting Files */,
 				C1DD229F1A8F732A00DF651B /* MovieDbClientTests.m */,
+				C1A49CCD1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m */,
+				C1A49CCF1AA4604300ED09C0 /* MovieDbTableViewCellTests.m */,
+				C1A49CD11AA4617100ED09C0 /* CDMovieTests.m */,
 			);
 			path = MovieDbTests;
 			sourceTree = "<group>";
@@ -512,10 +521,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1E925C41A8E45D800B28786 /* AFMovieDbClient.m in Sources */,
+				C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */,
+				C1A49CD21AA4617100ED09C0 /* CDMovieTests.m in Sources */,
 				C1DD22A01A8F732A00DF651B /* MovieDbClientTests.m in Sources */,
 				C1DD22C21A8F883F00DF651B /* MovieDbTableViewCell.m in Sources */,
 				C1DD22BE1A8F883F00DF651B /* MovieDetailViewController.m in Sources */,
 				C1DD22BC1A8F883F00DF651B /* MovieDb.xcdatamodeld in Sources */,
+				C1A49CD01AA4604300ED09C0 /* MovieDbTableViewCellTests.m in Sources */,
 				C19278851A8E42BE009573A0 /* MovieDbTests.m in Sources */,
 				C1DD22BA1A8F883F00DF651B /* MovieDatabaseContext.m in Sources */,
 				C1DD22B81A8F883F00DF651B /* CDMovie.m in Sources */,
