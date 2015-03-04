@@ -14,6 +14,7 @@
 @interface PopularMoviesViewController ()
 @property (nonatomic, assign) int pageCounter;
 @property (nonatomic,retain) NSFetchedResultsController *fetchController;
+@property (nonatomic, strong) MDMFetchedResultsTableDataSource *collectionDataSource;
 
 
 - (void) setup;
@@ -21,6 +22,7 @@
 - (void) loadPreviousPage;
 - (void) updateFetchPredicate;
 - (IBAction) refreshData:(id)sender;
+- (void)setupCollectionDataSource;
 
 @end
 
@@ -33,8 +35,21 @@
     self.pageCounter = 1;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(loadPreviousPage)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(loadNextPage)];
-    //    self.navigationItem.rightBarButtonItem = stepper;
+    [self setupCollectionDataSource];
 }
+
+
+- (void)setupCollectionDataSource {
+    
+    self.collectionDataSource = [[MDMFetchedResultsTableDataSource alloc] initWithTableView:self.tableView
+                                                                   fetchedResultsController:[self fetchController]];
+    
+    self.collectionDataSource.delegate = self;
+    self.collectionDataSource.reuseIdentifier = [MovieDbTableViewCell cellReuseIdentifier];
+    self.tableView.dataSource = self.collectionDataSource;
+}
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
@@ -62,35 +77,14 @@
     
 }
 
-#pragma mark - UItableView Delegate & DataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [[self.fetchController sections] count];
+#pragma mark - MDMFetchedResultsCollectionDataSourceDelegate
+
+- (void)dataSource:(MDMFetchedResultsTableDataSource *)dataSource configureCell:(id)cell withObject:(id)object{
+    MovieDbTableViewCell *movieCell = (MovieDbTableViewCell *) cell;
+    [movieCell setMovie:object];
 }
-
-
-// Customize the number of rows in the table view.
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger numberOfRows = 0;
-    NSArray *sections = self.fetchController.sections;
-    if(sections.count > 0)
-    {
-        id <NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
-        numberOfRows = [sectionInfo numberOfObjects];
-    }
-    return numberOfRows<0?0:numberOfRows;
-}
-
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    MovieDbTableViewCell *cell = (MovieDbTableViewCell *)[tableView dequeueReusableCellWithIdentifier:[MovieDbTableViewCell cellReuseIdentifier]];
-    [cell setMovie:[self.fetchController objectAtIndexPath:indexPath]];
-    //    if (indexPath.row == [self.fetchController.fetchedObjects count] - 1) // when reached at bottom send request to load more data
-    //    {
-    //        [self reload:nil];
-    //    }
-    return cell;
+- (void)dataSource:(MDMFetchedResultsTableDataSource *)dataSource deleteObject:(id)object atIndexPath:(NSIndexPath *)indexPath{
+    //Delete anything if you want to
 }
 
 
@@ -116,7 +110,6 @@
     [request setSortDescriptors:@[sortDescriptor]];
     request.predicate = [NSPredicate predicateWithFormat:@"%K = %i", CDMovieAttributes.page, self.pageCounter];
     _fetchController=[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[MovieDatabaseContext sharedContext].managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    _fetchController.delegate = self;
     NSError *error;
     if([_fetchController performFetch:&error])
     {
@@ -142,65 +135,6 @@
     });
 }
 
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
-    [self.tableView beginUpdates];
-}
-
-
-- (void)controller:(NSFetchedResultsController *)controller
-  didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex
-     forChangeType:(NSFetchedResultsChangeType)type
-{
-    
-    switch(type)
-    {
-        case NSFetchedResultsChangeInsert:
-            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-        case NSFetchedResultsChangeUpdate:
-            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-        case NSFetchedResultsChangeDelete://not yet supported
-        case NSFetchedResultsChangeMove:
-            break;
-            
-    }
-}
-
-- (void)controller:(NSFetchedResultsController *)controller
-   didChangeObject:(id)anObject
-       atIndexPath:(NSIndexPath *)theIndexPath
-     forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath
-{
-    switch(type)
-    {
-        case NSFetchedResultsChangeInsert:
-            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-            
-        case NSFetchedResultsChangeDelete:
-        {
-            
-            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:theIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            
-            break;
-        }
-        case NSFetchedResultsChangeMove:
-            [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:theIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-        case NSFetchedResultsChangeUpdate:
-            [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:theIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-}
-
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    [self.tableView endUpdates];
-}
 
 #pragma mark -
 

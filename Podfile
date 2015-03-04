@@ -3,8 +3,10 @@
 
 target 'MovieDb' do
 pod 'AFNetworking'
+pod 'MDMCoreData'
 end
 
 target 'MovieDbTests' do
 pod 'AFNetworking'
+pod 'MDMCoreData'
 end

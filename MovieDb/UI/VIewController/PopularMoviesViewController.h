@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MDMCoreData/MDMFetchedResultsTableDataSource.h>
 
-@interface PopularMoviesViewController : UITableViewController <UITabBarControllerDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
+@interface PopularMoviesViewController : UITableViewController <UITabBarControllerDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate, MDMFetchedResultsTableDataSourceDelegate>
 
 
 @end
