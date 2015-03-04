@@ -3,7 +3,7 @@
 
 
 
-That was old story.
+That was old story. 
 
 ### MVC ###
 
@@ -14,5 +14,5 @@ Depending on the nature of application, network logic in models might prove a ba
 Alternatively, you can also move network logic to seperate network manager layer. 
 
 
-# improved unit test cases, more Coredata related unit tests are coming. 
-# 
+* Improved unit test cases, more Coredata related unit tests are coming. 
+* Removed tableview datasource from controller, into a seperate class. 
