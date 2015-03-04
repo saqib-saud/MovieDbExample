@@ -17,7 +17,7 @@ Alternatively, you can also move network logic to seperate network manager layer
 Following things have been improved
 * Improved unit test cases, more Coredata related unit tests are coming. 
 * Removed tableview datasource from controller, into a seperate class. 
-
+* Extracted the coredata persistence related details into separate class from model 
 
 Pending
 

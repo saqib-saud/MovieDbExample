@@ -109,7 +109,7 @@
     NSSortDescriptor *sortDescriptor=[[NSSortDescriptor alloc] initWithKey:[NSString stringWithFormat:@"%@",CDMovieAttributes.popularity] ascending:NO];
     [request setSortDescriptors:@[sortDescriptor]];
     request.predicate = [NSPredicate predicateWithFormat:@"%K = %i", CDMovieAttributes.page, self.pageCounter];
-    _fetchController=[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[MovieDatabaseContext sharedContext].managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    _fetchController=[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:[MovieDatabaseContext sharedContext].persistenceController.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     NSError *error;
     if([_fetchController performFetch:&error])
     {

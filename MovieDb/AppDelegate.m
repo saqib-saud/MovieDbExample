@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //Create Read MOC
-    [[MovieDatabaseContext sharedContext] managedObjectContext];
+    [[MovieDatabaseContext sharedContext] persistenceController];
     
     return YES;
 }

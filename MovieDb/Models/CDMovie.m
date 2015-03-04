@@ -95,13 +95,9 @@
         return;
     }
     // Creating managed objects
-    __block NSManagedObjectContext *managedObjectContext = [[MovieDatabaseContext sharedContext] managedObjectContext];
-    __block NSManagedObjectContext *writerObjectContext = [[MovieDatabaseContext sharedContext] writerManagedObjectContext];
-    __block NSManagedObjectContext *temporaryContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-    temporaryContext.parentContext = managedObjectContext;
+    __block NSManagedObjectContext *temporaryContext = [[[MovieDatabaseContext sharedContext] persistenceController] newPrivateChildManagedObjectContext];
     
     [temporaryContext performBlock:^{
-//        int counter = 0;
         for (NSDictionary *attributes in moviesFromResponse) {
             NSInteger movieid = [[attributes valueForKeyPath:@"id"] integerValue];
             CDMovie * movie = [CDMovie movieWithId:movieid withContext:temporaryContext];
@@ -114,37 +110,12 @@
             if (page > 0) {//positive page
                 movie.pageValue = page;
             }
-
-
-//            if(counter % 5 == 0)
-//            {
-//                NSError *error = nil;
-//                if ([temporaryContext hasChanges] && (![temporaryContext save:&error])) {
-//                    NSLog(@"Error in Saving MOC: %@",[error description]);
-//                }
-//            }
-//            counter++;
         }
         NSError *error = nil;
         if ([temporaryContext hasChanges] && (![temporaryContext save:&error])) {
             NSLog(@"Error in Saving MOC: %@",[error description]);
         }
-        [managedObjectContext performBlock:^{
-            NSError *error = nil;
-            if ([managedObjectContext hasChanges] && (![managedObjectContext save:&error]))
-            {
-                NSLog(@"Error in Saving MOC: %@",[error description]);
-            }
-            
-            [writerObjectContext performBlock:^{
-                NSError *error = nil;
-                if ([writerObjectContext hasChanges] && (![writerObjectContext save:&error]))
-                {
-                    NSLog(@"Error in Saving MOC: %@",[error description]);
-                }
-                block(nil);// return the success
-            }]; // writer
-        }]; // main
+        [[[MovieDatabaseContext sharedContext] persistenceController] saveContextAndWait:NO completion:nil];
     }]; // parent
 }
 
