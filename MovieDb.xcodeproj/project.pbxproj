@@ -328,6 +328,7 @@
 				C192785F1A8E42BD009573A0 /* Frameworks */,
 				C19278601A8E42BD009573A0 /* Resources */,
 				E8EF194D9FFFF8B1ACCE6F13 /* Copy Pods Resources */,
+				89DB622503E3BEC86D2E68AC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +348,7 @@
 				C192787B1A8E42BE009573A0 /* Frameworks */,
 				C192787C1A8E42BE009573A0 /* Resources */,
 				652793CF03105170B84C6957 /* Copy Pods Resources */,
+				F244C7737CBF152C0C4EB93F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +371,7 @@
 				TargetAttributes = {
 					C19278611A8E42BD009573A0 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 4589BZT427;
+						DevelopmentTeam = J596YCL2DK;
 					};
 					C192787D1A8E42BE009573A0 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -454,6 +456,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		89DB622503E3BEC86D2E68AC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDb/Pods-MovieDb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB7BEC54BC393B95BC1A9A04 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +512,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDb/Pods-MovieDb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F244C7737CBF152C0C4EB93F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -643,6 +675,7 @@
 			baseConfigurationReference = E6028DC8B65A0BF84E82A6A9 /* Pods-MovieDb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "MovieDb/MovieDb-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -657,6 +690,7 @@
 			baseConfigurationReference = FA7ED0039EC07AAE6DEA36A3 /* Pods-MovieDb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "MovieDb/MovieDb-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
