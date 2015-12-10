@@ -371,7 +371,7 @@
 				TargetAttributes = {
 					C19278611A8E42BD009573A0 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = J596YCL2DK;
+						DevelopmentTeam = YUT27R869R;
 					};
 					C192787D1A8E42BE009573A0 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -675,13 +675,14 @@
 			baseConfigurationReference = E6028DC8B65A0BF84E82A6A9 /* Pods-MovieDb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
 				GCC_PREFIX_HEADER = "MovieDb/MovieDb-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtraiq.SFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
 			};
 			name = Debug;
 		};
@@ -690,13 +691,15 @@
 			baseConfigurationReference = FA7ED0039EC07AAE6DEA36A3 /* Pods-MovieDb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
 				GCC_PREFIX_HEADER = "MovieDb/MovieDb-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtraiq.SFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
 			};
 			name = Release;
 		};
