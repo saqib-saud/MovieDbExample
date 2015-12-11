@@ -1,39 +1,33 @@
 PODS:
-  - AFNetworking (2.5.1):
-    - AFNetworking/NSURLConnection (= 2.5.1)
-    - AFNetworking/NSURLSession (= 2.5.1)
-    - AFNetworking/Reachability (= 2.5.1)
-    - AFNetworking/Security (= 2.5.1)
-    - AFNetworking/Serialization (= 2.5.1)
-    - AFNetworking/UIKit (= 2.5.1)
-  - AFNetworking/NSURLConnection (2.5.1):
+  - AFNetworking (3.0.0):
+    - AFNetworking/NSURLSession (= 3.0.0)
+    - AFNetworking/Reachability (= 3.0.0)
+    - AFNetworking/Security (= 3.0.0)
+    - AFNetworking/Serialization (= 3.0.0)
+    - AFNetworking/UIKit (= 3.0.0)
+  - AFNetworking/NSURLSession (3.0.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.1)
-  - AFNetworking/Security (2.5.1)
-  - AFNetworking/Serialization (2.5.1)
-  - AFNetworking/UIKit (2.5.1):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.0.0)
+  - AFNetworking/Security (3.0.0)
+  - AFNetworking/Serialization (3.0.0)
+  - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
-  - MDMCoreData (1.5.0):
-    - MDMCoreData/MDMCoreDataCore (= 1.5.0)
-    - MDMCoreData/MDMFetchedResultsCollectionDataSource (= 1.5.0)
-    - MDMCoreData/MDMFetchedResultsTableDataSource (= 1.5.0)
-    - MDMCoreData/MDMPersistenceController (= 1.5.0)
-    - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (= 1.5.0)
-  - MDMCoreData/MDMCoreDataCore (1.5.0)
-  - MDMCoreData/MDMFetchedResultsCollectionDataSource (1.5.0):
+  - MDMCoreData (1.5.1):
+    - MDMCoreData/MDMCoreDataCore (= 1.5.1)
+    - MDMCoreData/MDMFetchedResultsCollectionDataSource (= 1.5.1)
+    - MDMCoreData/MDMFetchedResultsTableDataSource (= 1.5.1)
+    - MDMCoreData/MDMPersistenceController (= 1.5.1)
+    - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (= 1.5.1)
+  - MDMCoreData/MDMCoreDataCore (1.5.1)
+  - MDMCoreData/MDMFetchedResultsCollectionDataSource (1.5.1):
     - MDMCoreData/MDMCoreDataCore
-  - MDMCoreData/MDMFetchedResultsTableDataSource (1.5.0):
+  - MDMCoreData/MDMFetchedResultsTableDataSource (1.5.1):
     - MDMCoreData/MDMCoreDataCore
-  - MDMCoreData/MDMPersistenceController (1.5.0):
+  - MDMCoreData/MDMPersistenceController (1.5.1):
     - MDMCoreData/MDMCoreDataCore
-  - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (1.5.0):
+  - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (1.5.1):
     - MDMCoreData/MDMCoreDataCore
 
 DEPENDENCIES:
@@ -41,7 +35,7 @@ DEPENDENCIES:
   - MDMCoreData
 
 SPEC CHECKSUMS:
-  AFNetworking: 10e85a00bb0f475124e4ff2677bf15693b2c1523
-  MDMCoreData: 402f754cda90865026a209243f1667824e775649
+  AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
+  MDMCoreData: 28b334173177effeb1dd135da677062096e3cb68
 
 COCOAPODS: 0.39.0

@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		11F854BB0A0381CB12838531 /* libPods-MovieDb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F1247B0951BA9462B6834B /* libPods-MovieDb.a */; };
+		6A2E8C429BD5971030362FC5 /* libPods-Movie Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E45BD9D4B385ECDA73BDAB /* libPods-Movie Example.a */; };
 		BB52DBDB35C2938149D6B571 /* libPods-MovieDbTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B408D29B99F0441459F8D413 /* libPods-MovieDbTests.a */; };
 		C19278681A8E42BD009573A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278671A8E42BD009573A0 /* main.m */; };
 		C192786B1A8E42BD009573A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C192786A1A8E42BD009573A0 /* AppDelegate.m */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38E45BD9D4B385ECDA73BDAB /* libPods-Movie Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Movie Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6D97585AF088CB35F14896 /* Pods-MovieDbTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDbTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57B05645D9FC5A2196975F6B /* Pods-MovieDbTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDbTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests.release.xcconfig"; sourceTree = "<group>"; };
 		91F1247B0951BA9462B6834B /* libPods-MovieDb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieDb.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F854BB0A0381CB12838531 /* libPods-MovieDb.a in Frameworks */,
+				6A2E8C429BD5971030362FC5 /* libPods-Movie Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +140,7 @@
 			children = (
 				91F1247B0951BA9462B6834B /* libPods-MovieDb.a */,
 				B408D29B99F0441459F8D413 /* libPods-MovieDbTests.a */,
+				38E45BD9D4B385ECDA73BDAB /* libPods-Movie Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -468,7 +472,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDb/Pods-MovieDb-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie Example/Pods-Movie Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB7BEC54BC393B95BC1A9A04 /* Check Pods Manifest.lock */ = {
@@ -511,7 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDb/Pods-MovieDb-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie Example/Pods-Movie Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F244C7737CBF152C0C4EB93F /* Embed Pods Frameworks */ = {

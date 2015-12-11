@@ -1,12 +1,8 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-target 'MovieDb' do
+target 'Movie Example' do
 pod 'AFNetworking'
 pod 'MDMCoreData'
 end
 
-target 'MovieDbTests' do
-pod 'AFNetworking'
-pod 'MDMCoreData'
-end
