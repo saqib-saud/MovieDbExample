@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Saqib Saud. All rights reserved.
 //
 
-#import <AFNetworking/AFHTTPSessionManager.h>
+#import "AFHTTPSessionManager.h"
 @interface AFMovieDbClient : AFHTTPSessionManager
 
 + (instancetype)sharedInstance;

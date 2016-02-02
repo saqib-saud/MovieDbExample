@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MDMCoreData/MDMPersistenceController.h>
+#import "MDMPersistenceController.h"
 
 @interface MovieDatabaseContext : NSObject
 @property (nonatomic, strong) MDMPersistenceController *persistenceController;

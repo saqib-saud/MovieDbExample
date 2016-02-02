@@ -7,7 +7,7 @@
 //
 
 #import "MovieDetailViewController.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
 
 @interface MovieDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *moviePoster;

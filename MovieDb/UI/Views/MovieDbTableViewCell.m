@@ -7,7 +7,7 @@
 //
 
 #import "MovieDbTableViewCell.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
 
 
 @implementation MovieDbTableViewCell
