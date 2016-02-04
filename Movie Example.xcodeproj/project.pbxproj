@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		BB52DBDB35C2938149D6B571 /* libPods-MovieDbTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B408D29B99F0441459F8D413 /* libPods-MovieDbTests.a */; };
 		C13B8AD81C60AE8A00EDE167 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA21C60AE8A00EDE167 /* AFHTTPSessionManager.m */; };
 		C13B8AD91C60AE8A00EDE167 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA51C60AE8A00EDE167 /* AFNetworkReachabilityManager.m */; };
 		C13B8ADA1C60AE8A00EDE167 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA71C60AE8A00EDE167 /* AFSecurityPolicy.m */; };
@@ -177,17 +176,6 @@
 		C1E925D51A8E5C1C00B28786 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		C1E925D81A8E5DE300B28786 /* MovieDb-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MovieDb-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C192787B1A8E42BE009573A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB52DBDB35C2938149D6B571 /* libPods-MovieDbTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9B42514CCC8F9B7C7B2FE23B /* Frameworks */ = {
@@ -523,12 +511,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C192788B1A8E42BE009573A0 /* Build configuration list for PBXNativeTarget "Movie ExampleTests" */;
 			buildPhases = (
-				0A4B1AEC5D986FBF7DA42F56 /* Check Pods Manifest.lock */,
 				C192787A1A8E42BE009573A0 /* Sources */,
-				C192787B1A8E42BE009573A0 /* Frameworks */,
 				C192787C1A8E42BE009573A0 /* Resources */,
-				652793CF03105170B84C6957 /* Copy Pods Resources */,
-				F244C7737CBF152C0C4EB93F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -608,36 +592,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A4B1AEC5D986FBF7DA42F56 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		652793CF03105170B84C6957 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1E925C91A8E516B00B28786 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,21 +604,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mogenerator -m $SRCROOT/MovieDb/MovieDb.xcdatamodeld/ -O $SRCROOT/MovieDb/Models/ --template-var arc=true";
-		};
-		F244C7737CBF152C0C4EB93F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDbTests/Pods-MovieDbTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
