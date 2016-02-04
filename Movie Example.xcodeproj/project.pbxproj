@@ -51,7 +51,6 @@
 		C19278851A8E42BE009573A0 /* MovieDbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278841A8E42BE009573A0 /* MovieDbTests.m */; };
 		C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CCD1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m */; };
 		C1A49CD01AA4604300ED09C0 /* MovieDbTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CCF1AA4604300ED09C0 /* MovieDbTableViewCellTests.m */; };
-		C1A49CD21AA4617100ED09C0 /* CDMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CD11AA4617100ED09C0 /* CDMovieTests.m */; };
 		C1DD229E1A8F6D4E00DF651B /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD229D1A8F6D4E00DF651B /* CoreDataTests.m */; };
 		C1DD22A01A8F732A00DF651B /* MovieDbClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD229F1A8F732A00DF651B /* MovieDbClientTests.m */; };
 		C1DD22B51A8F883F00DF651B /* _CDMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD22A31A8F883F00DF651B /* _CDMovie.m */; };
@@ -653,7 +652,6 @@
 			files = (
 				C1E925C41A8E45D800B28786 /* AFMovieDbClient.m in Sources */,
 				C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */,
-				C1A49CD21AA4617100ED09C0 /* CDMovieTests.m in Sources */,
 				C1DD22A01A8F732A00DF651B /* MovieDbClientTests.m in Sources */,
 				C1DD22C21A8F883F00DF651B /* MovieDbTableViewCell.m in Sources */,
 				C1DD22BE1A8F883F00DF651B /* MovieDetailViewController.m in Sources */,
