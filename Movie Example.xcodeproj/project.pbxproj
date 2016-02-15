@@ -769,14 +769,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mi Express Care Licensing Company LLC (6EK5YNF9WS)";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
-				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
+				PROVISIONING_PROFILE = "78d402a8-c1b2-4987-b170-11ac1fabca14";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -785,7 +785,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mi Express Care Licensing Company LLC (6EK5YNF9WS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saqib Saud (6DPFM6X53V)";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
@@ -793,7 +793,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
-				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
+				PROVISIONING_PROFILE = "78d402a8-c1b2-4987-b170-11ac1fabca14";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
