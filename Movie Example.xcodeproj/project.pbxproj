@@ -774,7 +774,7 @@
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtraiq.SFS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
 				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
 			};
@@ -790,7 +790,7 @@
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtraiq.SFS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
 				PROVISIONING_PROFILE = "c74091b8-ffef-486d-9c61-e64926fc69c6";
 			};
