@@ -21,6 +21,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		C10080341C71FEC500813AEC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA21C60AE8A00EDE167 /* AFHTTPSessionManager.m */; };
+		C10080351C71FEC600813AEC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA51C60AE8A00EDE167 /* AFNetworkReachabilityManager.m */; };
+		C10080361C71FEC600813AEC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA71C60AE8A00EDE167 /* AFSecurityPolicy.m */; };
+		C10080371C71FEC600813AEC /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA91C60AE8A00EDE167 /* AFURLRequestSerialization.m */; };
+		C10080381C71FEC600813AEC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AAB1C60AE8A00EDE167 /* AFURLResponseSerialization.m */; };
+		C10080391C71FEC600813AEC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AAD1C60AE8A00EDE167 /* AFURLSessionManager.m */; };
+		C100803A1C71FED400813AEC /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB21C60AE8A00EDE167 /* AFAutoPurgingImageCache.m */; };
+		C100803B1C71FED400813AEC /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB41C60AE8A00EDE167 /* AFImageDownloader.m */; };
+		C100803C1C71FED400813AEC /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB61C60AE8A00EDE167 /* AFNetworkActivityIndicatorManager.m */; };
+		C100803D1C71FED400813AEC /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB81C60AE8A00EDE167 /* UIActivityIndicatorView+AFNetworking.m */; };
+		C100803E1C71FED400813AEC /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8ABA1C60AE8A00EDE167 /* UIButton+AFNetworking.m */; };
+		C100803F1C71FED400813AEC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8ABD1C60AE8A00EDE167 /* UIImageView+AFNetworking.m */; };
+		C10080401C71FED400813AEC /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AC01C60AE8A00EDE167 /* UIProgressView+AFNetworking.m */; };
+		C10080411C71FED400813AEC /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AC21C60AE8A00EDE167 /* UIRefreshControl+AFNetworking.m */; };
+		C10080421C71FED400813AEC /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AC41C60AE8A00EDE167 /* UIWebView+AFNetworking.m */; };
+		C10080431C71FEF000813AEC /* MDMFetchedResultsCollectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8ACC1C60AE8A00EDE167 /* MDMFetchedResultsCollectionDataSource.m */; };
+		C10080441C71FEF000813AEC /* MDMFetchedResultsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8ACF1C60AE8A00EDE167 /* MDMFetchedResultsTableDataSource.m */; };
+		C10080451C71FEF000813AEC /* MDMPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD21C60AE8A00EDE167 /* MDMPersistenceController.m */; };
+		C10080461C71FEF000813AEC /* NSManagedObject+MDMCoreDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD51C60AE8A00EDE167 /* NSManagedObject+MDMCoreDataAdditions.m */; };
 		C13B8AD81C60AE8A00EDE167 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA21C60AE8A00EDE167 /* AFHTTPSessionManager.m */; };
 		C13B8AD91C60AE8A00EDE167 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA51C60AE8A00EDE167 /* AFNetworkReachabilityManager.m */; };
 		C13B8ADA1C60AE8A00EDE167 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA71C60AE8A00EDE167 /* AFSecurityPolicy.m */; };
@@ -650,20 +669,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10080441C71FEF000813AEC /* MDMFetchedResultsTableDataSource.m in Sources */,
 				C1E925C41A8E45D800B28786 /* AFMovieDbClient.m in Sources */,
+				C100803F1C71FED400813AEC /* UIImageView+AFNetworking.m in Sources */,
+				C100803E1C71FED400813AEC /* UIButton+AFNetworking.m in Sources */,
 				C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */,
 				C1DD22A01A8F732A00DF651B /* MovieDbClientTests.m in Sources */,
 				C1DD22C21A8F883F00DF651B /* MovieDbTableViewCell.m in Sources */,
 				C1DD22BE1A8F883F00DF651B /* MovieDetailViewController.m in Sources */,
+				C10080391C71FEC600813AEC /* AFURLSessionManager.m in Sources */,
+				C10080431C71FEF000813AEC /* MDMFetchedResultsCollectionDataSource.m in Sources */,
+				C100803D1C71FED400813AEC /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C1DD22BC1A8F883F00DF651B /* MovieDb.xcdatamodeld in Sources */,
+				C10080351C71FEC600813AEC /* AFNetworkReachabilityManager.m in Sources */,
 				C1A49CD01AA4604300ED09C0 /* MovieDbTableViewCellTests.m in Sources */,
 				C19278851A8E42BE009573A0 /* MovieDbTests.m in Sources */,
+				C10080381C71FEC600813AEC /* AFURLResponseSerialization.m in Sources */,
+				C10080371C71FEC600813AEC /* AFURLRequestSerialization.m in Sources */,
+				C100803C1C71FED400813AEC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				C100803A1C71FED400813AEC /* AFAutoPurgingImageCache.m in Sources */,
+				C10080361C71FEC600813AEC /* AFSecurityPolicy.m in Sources */,
 				C1DD22BA1A8F883F00DF651B /* MovieDatabaseContext.m in Sources */,
 				C1DD22B81A8F883F00DF651B /* CDMovie.m in Sources */,
 				C1DD22C01A8F883F00DF651B /* PopularMoviesViewController.m in Sources */,
 				C1DD229E1A8F6D4E00DF651B /* CoreDataTests.m in Sources */,
+				C10080411C71FED400813AEC /* UIRefreshControl+AFNetworking.m in Sources */,
+				C10080461C71FEF000813AEC /* NSManagedObject+MDMCoreDataAdditions.m in Sources */,
+				C10080401C71FED400813AEC /* UIProgressView+AFNetworking.m in Sources */,
+				C10080341C71FEC500813AEC /* AFHTTPSessionManager.m in Sources */,
+				C10080421C71FED400813AEC /* UIWebView+AFNetworking.m in Sources */,
+				C10080451C71FEF000813AEC /* MDMPersistenceController.m in Sources */,
 				C1E925D71A8E5C2200B28786 /* Constants.m in Sources */,
 				C1DD22B61A8F883F00DF651B /* _CDMovie.m in Sources */,
+				C100803B1C71FED400813AEC /* AFImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
