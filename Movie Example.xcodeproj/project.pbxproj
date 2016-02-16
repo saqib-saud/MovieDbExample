@@ -835,7 +835,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6bf401e4-e093-4543-8ec7-9cc408b16350";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
