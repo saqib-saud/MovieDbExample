@@ -65,7 +65,7 @@
 		C13B8AEE1C60AE8A00EDE167 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD71C60AE8A00EDE167 /* README.md */; };
 		C19278681A8E42BD009573A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278671A8E42BD009573A0 /* main.m */; };
 		C192786B1A8E42BD009573A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C192786A1A8E42BD009573A0 /* AppDelegate.m */; };
-		C19278761A8E42BD009573A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19278751A8E42BD009573A0 /* Images.xcassets */; };
+		C19278761A8E42BD009573A0 /* Your binary is not optimized for iPhone 5.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19278751A8E42BD009573A0 /* Your binary is not optimized for iPhone 5.xcassets */; };
 		C19278791A8E42BD009573A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19278771A8E42BD009573A0 /* LaunchScreen.xib */; };
 		C19278851A8E42BE009573A0 /* MovieDbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278841A8E42BE009573A0 /* MovieDbTests.m */; };
 		C1A49CCE1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A49CCD1AA43E6300ED09C0 /* PopularMoviesViewControllerTests.m */; };
@@ -162,7 +162,7 @@
 		C19278671A8E42BD009573A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C19278691A8E42BD009573A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C192786A1A8E42BD009573A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C19278751A8E42BD009573A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C19278751A8E42BD009573A0 /* Your binary is not optimized for iPhone 5.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Your binary is not optimized for iPhone 5.xcassets"; sourceTree = "<group>"; };
 		C19278781A8E42BD009573A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C192787E1A8E42BE009573A0 /* Movie Example.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie Example.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19278831A8E42BE009573A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 		C1E925BF1A8E44D300B28786 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C19278751A8E42BD009573A0 /* Images.xcassets */,
+				C19278751A8E42BD009573A0 /* Your binary is not optimized for iPhone 5.xcassets */,
 				C19278771A8E42BD009573A0 /* LaunchScreen.xib */,
 			);
 			name = Assets;
@@ -592,7 +592,7 @@
 				C13B8AED1C60AE8A00EDE167 /* LICENSE in Resources */,
 				C19278791A8E42BD009573A0 /* LaunchScreen.xib in Resources */,
 				C1DD22C31A8F883F00DF651B /* MovieDbTableViewCell.xib in Resources */,
-				C19278761A8E42BD009573A0 /* Images.xcassets in Resources */,
+				C19278761A8E42BD009573A0 /* Your binary is not optimized for iPhone 5.xcassets in Resources */,
 				C1DD22C61A8F888B00DF651B /* Main.storyboard in Resources */,
 				C13B8ADE1C60AE8A00EDE167 /* LICENSE in Resources */,
 			);
