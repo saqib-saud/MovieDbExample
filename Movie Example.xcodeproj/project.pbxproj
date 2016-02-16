@@ -810,7 +810,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Mi Express Care Licensing Company LLC (6EK5YNF9WS)";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
@@ -827,7 +827,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mi Express Care Licensing Company LLC (6EK5YNF9WS)";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zipycare.citest;
 				PRODUCT_NAME = "Movie Example";
