@@ -46,8 +46,6 @@
 		C13B8ADB1C60AE8A00EDE167 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AA91C60AE8A00EDE167 /* AFURLRequestSerialization.m */; };
 		C13B8ADC1C60AE8A00EDE167 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AAB1C60AE8A00EDE167 /* AFURLResponseSerialization.m */; };
 		C13B8ADD1C60AE8A00EDE167 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AAD1C60AE8A00EDE167 /* AFURLSessionManager.m */; };
-		C13B8ADE1C60AE8A00EDE167 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C13B8AAE1C60AE8A00EDE167 /* LICENSE */; };
-		C13B8ADF1C60AE8A00EDE167 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AAF1C60AE8A00EDE167 /* README.md */; };
 		C13B8AE01C60AE8A00EDE167 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB21C60AE8A00EDE167 /* AFAutoPurgingImageCache.m */; };
 		C13B8AE11C60AE8A00EDE167 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB41C60AE8A00EDE167 /* AFImageDownloader.m */; };
 		C13B8AE21C60AE8A00EDE167 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AB61C60AE8A00EDE167 /* AFNetworkActivityIndicatorManager.m */; };
@@ -61,8 +59,6 @@
 		C13B8AEA1C60AE8A00EDE167 /* MDMFetchedResultsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8ACF1C60AE8A00EDE167 /* MDMFetchedResultsTableDataSource.m */; };
 		C13B8AEB1C60AE8A00EDE167 /* MDMPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD21C60AE8A00EDE167 /* MDMPersistenceController.m */; };
 		C13B8AEC1C60AE8A00EDE167 /* NSManagedObject+MDMCoreDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD51C60AE8A00EDE167 /* NSManagedObject+MDMCoreDataAdditions.m */; };
-		C13B8AED1C60AE8A00EDE167 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C13B8AD61C60AE8A00EDE167 /* LICENSE */; };
-		C13B8AEE1C60AE8A00EDE167 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C13B8AD71C60AE8A00EDE167 /* README.md */; };
 		C19278681A8E42BD009573A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C19278671A8E42BD009573A0 /* main.m */; };
 		C192786B1A8E42BD009573A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C192786A1A8E42BD009573A0 /* AppDelegate.m */; };
 		C19278761A8E42BD009573A0 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19278751A8E42BD009573A0 /* images.xcassets */; };
@@ -589,12 +585,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13B8AED1C60AE8A00EDE167 /* LICENSE in Resources */,
 				C19278791A8E42BD009573A0 /* LaunchScreen.xib in Resources */,
 				C1DD22C31A8F883F00DF651B /* MovieDbTableViewCell.xib in Resources */,
 				C19278761A8E42BD009573A0 /* images.xcassets in Resources */,
 				C1DD22C61A8F888B00DF651B /* Main.storyboard in Resources */,
-				C13B8ADE1C60AE8A00EDE167 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +635,6 @@
 				C192786B1A8E42BD009573A0 /* AppDelegate.m in Sources */,
 				C13B8AE91C60AE8A00EDE167 /* MDMFetchedResultsCollectionDataSource.m in Sources */,
 				C13B8AE41C60AE8A00EDE167 /* UIButton+AFNetworking.m in Sources */,
-				C13B8ADF1C60AE8A00EDE167 /* README.md in Sources */,
 				C13B8AE11C60AE8A00EDE167 /* AFImageDownloader.m in Sources */,
 				C13B8AE81C60AE8A00EDE167 /* UIWebView+AFNetworking.m in Sources */,
 				C13B8AD81C60AE8A00EDE167 /* AFHTTPSessionManager.m in Sources */,
@@ -652,7 +645,6 @@
 				C13B8AE31C60AE8A00EDE167 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C13B8AEC1C60AE8A00EDE167 /* NSManagedObject+MDMCoreDataAdditions.m in Sources */,
 				C1DD22C11A8F883F00DF651B /* MovieDbTableViewCell.m in Sources */,
-				C13B8AEE1C60AE8A00EDE167 /* README.md in Sources */,
 				C1DD22B51A8F883F00DF651B /* _CDMovie.m in Sources */,
 				C1DD22BD1A8F883F00DF651B /* MovieDetailViewController.m in Sources */,
 				C13B8AE71C60AE8A00EDE167 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -810,7 +802,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -828,7 +819,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PREFIX_HEADER = "MovieDb/Movie Example-Prefix.pch";
 				INFOPLIST_FILE = MovieDb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
